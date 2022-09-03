@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
 //        window?.rootViewController = LoginViewController()
-//        window?.rootViewController = OnboardingContainerViewController()
-        window?.rootViewController = OnboardingViewController()
+        window?.rootViewController = OnboardingContainerViewController()
+//        window?.rootViewController = OnboardingViewController(heroImageName: "delorean", tittleText: "Bankey is faster, easier to use, and has a fresh new look and feel that will make you feel like you are in the 80's")
         
         return true
     }
