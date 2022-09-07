@@ -28,8 +28,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         onboardingContainerViewController.delegate = self
         dummyViewController.logoutDelegate = self
         
-        window?.rootViewController = mainViewController
+
+//        window?.rootViewController = mainViewController
 //        window?.rootViewController = onboardingContainerViewController
+        window?.rootViewController = AccountSummaryViewController()
 //        window?.rootViewController = OnboardingViewController(heroImageName: "delorean", tittleText: "Bankey is faster, easier to use, and has a fresh new look and feel that will make you feel like you are in the 80's")
         
         return true
@@ -63,6 +65,7 @@ extension AppDelegate: LoginViewControllerDelegate {
         }
     }
 }
+
 extension AppDelegate: OnboardingContainerViewControllerDelegate {
     func didFinishOnboarding() {
         LocalState.hasOnboarded = true

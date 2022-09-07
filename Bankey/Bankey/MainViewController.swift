@@ -4,7 +4,6 @@
 //
 //  Created by RuslanS on 9/6/22.
 //
-
 import UIKit
 
 class MainViewController: UITabBarController {
@@ -46,12 +45,6 @@ class MainViewController: UITabBarController {
     private func setupTabBar() {
         tabBar.tintColor = appColor
         tabBar.isTranslucent = false
-    }
-}
-
-class AccountSummaryViewController: UIViewController {
-    override func viewDidLoad() {
-        view.backgroundColor = .systemGreen
     }
 }
 
