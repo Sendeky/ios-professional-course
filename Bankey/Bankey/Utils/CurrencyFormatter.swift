@@ -19,7 +19,7 @@ struct CurrencyFormatter {
         let tuple = modf(amount.doubleValue)
         
         let dollars = convertDollar(tuple.0)
-        let cents = convertDollar(tuple.1)
+        let cents = convertCents(tuple.1)
         
         return(dollars, cents)
     }
