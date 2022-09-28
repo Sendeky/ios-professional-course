@@ -70,6 +70,7 @@ extension AccountSummaryCell {
         
         balanceStackView.translatesAutoresizingMaskIntoConstraints = false
         balanceStackView.axis = .vertical
+        balanceLabel.adjustsFontSizeToFitWidth = true
         balanceStackView.spacing = 0
         
         balanceLabel.translatesAutoresizingMaskIntoConstraints = false
